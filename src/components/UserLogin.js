@@ -152,7 +152,7 @@ export default function UserLogin({ show, setShow, setPeep }) {
       </Modal.Body>
       <Modal.Footer>
         <div style={moreStyles.peepSelect}>
-          <div style={moreStyles.whichPeep}>Which peep are you?</div>
+          <div style={moreStyles.whichPeep}>Which Withers you is?</div>
           <DropdownButton
             title={`I Am ${peep.name ? peep.name : '...'}`}
             drop="start"
