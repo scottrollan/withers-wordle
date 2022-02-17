@@ -1,0 +1,68 @@
+@import '../styles/custom-properties.module.scss';
+
+.keyboard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.keyboardRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.key,
+.key:hover,
+.key:active,
+.key:focus,
+.key:visited {
+  height: 56px;
+  min-width: 42px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--light-gray);
+  border: none;
+  outline: none;
+  font-size: x-large;
+  font-weight: 600;
+  color: black;
+  @media screen and (max-width: $breakpoint-small) {
+    min-width: fit-content;
+    font-size: small;
+  }
+}
+
+[data-state=''],
+[data-state='']:hover,
+[data-state='']:active,
+[data-state='']:visited,
+[data-state='']:focus {
+  background-color: var(--light-gray);
+}
+[data-state='present'],
+[data-state='present']:hover,
+[data-state='present']:active,
+[data-state='present']:focus,
+[data-state='present']:visited {
+  background-color: var(--puke-yellow);
+}
+
+[data-state='correct'],
+[data-state='correct']:hover,
+[data-state='correct']:active,
+[data-state='correct']:focus,
+[data-state='correct']:visited {
+  background-color: var(--green);
+}
+
+[data-state='absent'],
+[data-state='absent']:hover,
+[data-state='absent']:active,
+[data-state='absent']:focus,
+[data-state='absent']:visited {
+  background-color: var(--dark-gray);
+}

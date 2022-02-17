@@ -1,0 +1,33 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.fireworks {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  max-width: 550px;
+  min-height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
+  border-bottom: 2px solid black;
+  pointer-events: none;
+}
+
+.logo {
+  pointer-events: none;
+  height: 5vh;
+  position: absolute;
+  left: 0;
+}
